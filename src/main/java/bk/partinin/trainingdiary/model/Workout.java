@@ -19,6 +19,6 @@ public class Workout {
     private String workoutName;
     private Instant createdDate;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userId", referencedColumnName = "userId")
+    @JoinColumn(name = "userUserId", referencedColumnName = "userId")
     private User user;
 }
